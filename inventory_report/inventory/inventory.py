@@ -1,5 +1,6 @@
 from inventory_report.reports.complete_report import CompleteReport
 import csv
+import json
 
 
 class Inventory(CompleteReport):
@@ -9,9 +10,13 @@ class Inventory(CompleteReport):
             with open(path) as file:
                 data = list(csv.DictReader(file))
                 return data
+        elif path.endswith(".json"):
+            with open(path) as file:
+                data = list(json.load(file))
+                return data
         else:
             raise ValueError(
-                "Invalid file type. Try: 'CSV' type"
+                "Invalid file type. Try: 'CSV' or 'JSON' types"
             )
 
     @classmethod
