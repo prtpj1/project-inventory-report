@@ -1,6 +1,7 @@
 from inventory_report.reports.complete_report import CompleteReport
 import csv
 import json
+import xmltodict
 
 
 class Inventory(CompleteReport):
@@ -14,9 +15,13 @@ class Inventory(CompleteReport):
             with open(path) as file:
                 data = list(json.load(file))
                 return data
+        elif path.endswith(".xml"):
+            with open(path) as file:
+                data = xmltodict.parse(file.read())["dataset"]["record"]
+                return data
         else:
             raise ValueError(
-                "Invalid file type. Try: 'CSV' or 'JSON' types"
+                "Invalid file type. Try: 'CSV', 'JSON' or 'XML' types"
             )
 
     @classmethod
