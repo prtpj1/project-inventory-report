@@ -3,12 +3,10 @@ from collections import Counter
 
 
 class SimpleReport:
-    # @classmethod
     def oldest_date(list):
         date = min(product["data_de_fabricacao"] for product in list)
         return date
 
-    # @classmethod
     def closest_date(list):
         TODAY = datetime.today().isoformat()
         date = min(
@@ -18,7 +16,6 @@ class SimpleReport:
         )
         return date
 
-    # @classmethod
     def company_with_bigger_stock(list):
         company = Counter(
             [company_name["nome_da_empresa"] for company_name in list]
