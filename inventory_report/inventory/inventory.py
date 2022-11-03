@@ -1,4 +1,5 @@
 from inventory_report.reports.complete_report import CompleteReport
+from inventory_report.helper.TypeReportChoices import TypeReportChoices
 import csv
 import json
 import xmltodict
@@ -25,13 +26,14 @@ class Inventory(CompleteReport):
             )
 
     @classmethod
-    def import_data(cls, path, type="simples" or "completo"):
+    def import_data(cls, path, type: TypeReportChoices):
         data = cls.open_file(path)
 
         if type == "simples":
             simple_report = super(CompleteReport, cls).generate(data)
             return simple_report
-
-        if type == "completo":
+        elif type == "completo":
             complete_report = super(Inventory, cls).generate(data)
             return complete_report
+        else:
+            raise ValueError("Invalid type. Try 'simples' or 'completo'")
