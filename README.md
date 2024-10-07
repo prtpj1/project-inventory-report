@@ -22,23 +22,21 @@
 ## Project Description
 I created this Computer Science project in Python during my learning period at Trybe, where I implemented functions for reading and writing JSON and CSV files using Object-Oriented Programming.
 
-A report generator was developed that takes files with inventory data as input and produces a report about this data as output. The inventory data can be obtained from various sources:
+A report generator was developed that takes files with inventory data as input and produces a report about this data as output. The inventory data can be obtained from various sources
 - By importing a `CSV` file;
 - By importing a `JSON` file;
 - By importing an `XML` file.
 
-Additionally, the final report has two versions:
+Additionally, the final report has two versions
 - simple
 - complete
 
-## In this project, I learned and put into practice:
+## In this project, I learned and put into practice
 - Apply Object-Oriented Programming concepts in Python
 - Apply design patterns
 - Read and write files (XML, CSV, JSON)
 
-
----
-## According to the project requirements designated by Trybe, I learned how to:
+## According to the project requirements designated by Trybe, I learned how to
 - ✅ Test the `constructor/initializer` of the Product object
 - ✅ Test the individual product report
 - ✅ Generate the simplified version of the report
@@ -59,9 +57,8 @@ _*I still haven't decided if it's better to leave it this way to demonstrate my 
 
 _*Feedback is welcome.*_
 
----
 ## Stacks
-### BackEnd:
+### BackEnd
 - Docker
 - Python
 
@@ -71,23 +68,22 @@ _*Feedback is welcome.*_
 ## Descrição do Projeto
 Fiz este projeto de Ciência da Computação em Python durante meu período de aprendizagem na Trybe onde implementei funções para leitura e escrita de arquivos JSON e CSV utilizando a Programação Orientada a Objetos.
 Foi desenvolvido um gerador de relatórios que recebe como entrada arquivos com dados de um estoque e gera, como saída, um relatório acerca destes dados.
+
 Os dados de estoque poderão ser obtidos de diversas fontes:
 - Através da importação de um arquivo `CSV`;
 - Através da importação de um arquivo `JSON`;
 - Através da importação de um arquivo `XML`.
 
-Além disso, o relatório final possui duas versões: 
+Além disso, o relatório final possui duas versões
 - simples
 - completa
 
-## Nesse projeto, aprendi e coloquei em prática:
+## Nesse projeto, aprendi e coloquei em prática
 - Aplicar conceitos de Orientação a Objetos em Python
 - Aplicar padrões de projeto
 - Leitura e escrita de arquivos (XML, CSV, JSON)
 
----
-
-## De acordo com os requisitos do projeto designados pela Trybe aprendi como:
+## De acordo com os requisitos do projeto designados pela Trybe aprendi como
 - ✅ Testar o `construtor/inicializador` do objeto Produto
 - ✅ Testar o relatório individual do produto
 - ✅ Gerar a versão simplificada do relatório 
@@ -108,9 +104,8 @@ _*Ainda não decidi se é melhor deixar desta forma para demonstrar o meu progre
 
 _*Feedbacks são bem vindos.*_
 
----
 ## Tecnologias Utilizadas
-### BackEnd:
+### BackEnd
 - Docker
 - Python
 
